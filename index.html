@@ -4,31 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!--insert 3rd party font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<!-- link the css last -->
   <link rel="stylesheet" href="css/main.css">
   <title>Document</title>
 </head>
 <body>
-  <main class="app">
-    <header>
+  <main id="app">
+    <header class="main-header">
       <h1 class="hidden">Welcome to my Awesome SVG Store</h1>
-      <h2 id="main-header">My Store</h2>
-      <nav>
-        <ul class="main-nav">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </nav>
+      <h2 class="main-heading">My SVG Icons</h2>
     </header>
 
-    <section class="icons">
-      <h1 class="hidden">my awesome icons</h1>
-      <!-- 10 icons here -->
+    <!-- svg cintainer starts here -->
+    <section id="svg-grid">
+      <article class="container">
+        <h2 class="hidden">graphic 1</h2>
+        <!-- this is a .jpg (raster) image -->
+        <object data="images/badge.svg" type="images/svg+xml"></object>
+        <p>left</p>
+      </article>
+
+      <article class="container">
+        <h2 class="hidden">graphic 2</h2>
+        <!-- this is an .svg (vector) image -->
+        <p>right</p>
+      </article>
     </section>
+    <!-- svg container ends here -->
+
   </main>
-  <footer>put whatever you want for the footer here</footer>
+  <footer>footer for SVG page</footer>
   <!-- script tags always go at the bottom-->
   <script src="js/main.js" defer></script>
 </body>
