@@ -47,7 +47,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 2em;
   border: 9px double #313552;
   border-radius: 10px;
 }
@@ -70,6 +69,7 @@ body {
   text-align: center;
   padding: 0em 0em 3em;
   background-color: #313552;
+  color: white;
   font-family: 'Josefin Sans', sans-serif;
 }
 
