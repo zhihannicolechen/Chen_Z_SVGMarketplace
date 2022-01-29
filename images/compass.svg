@@ -1,0 +1,45 @@
+<svg id="compass" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2eb086;
+        stroke-width: 8px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #313552;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #eee6ce;
+        stroke-width: 2px;
+      }
+
+      .cls-3 {
+        fill: #b8405e;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-width: 7px;
+      }
+
+      .cls-4 {
+        fill: #e1ea1f;
+      }
+    </style>
+    <script>
+      <!-- define the variables first (the elements you want the user to interact with) -->
+      let theCompass = document.querySelector("#compass");
+
+      function logMyId() { console.log("clicked on an element:", this.id); }
+
+      <!-- define the user events that drive interactivity (click, hover, whatever)-->
+      theCompass.addEventListener("click", logMyId);
+    </script>
+  </defs>
+  <path id="outside" class="cls-1" d="M289.75,44C147.4,44,32,159.4,32,301.75S147.4,559.5,289.75,559.5,547.5,444.1,547.5,301.75,432.1,44,289.75,44Zm0,466c-115,0-208.25-93.24-208.25-208.25S174.74,93.5,289.75,93.5,498,186.74,498,301.75,404.76,510,289.75,510Z"/>
+  <path id="BG" class="cls-2" d="M492,301.75C492,413.45,401.45,504,289.75,504S87.5,413.45,87.5,301.75,178.05,99.5,289.75,99.5,492,190.05,492,301.75Z"/>
+  <path id="needle" class="cls-3" d="M316.8,327.05l-62.14,35.09-62.14,35.09,35.09-62.14L262.7,273l62.14-35.09L387,202.77l-35.09,62.14Z"/>
+  <path id="center" class="cls-4" d="M311.48,299a19,19,0,1,1-19-19A19,19,0,0,1,311.48,299Z"/>
+</svg>

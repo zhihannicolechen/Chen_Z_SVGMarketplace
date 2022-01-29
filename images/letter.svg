@@ -1,0 +1,45 @@
+<svg id="letter" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b8405e;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke: #313552;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 7px;
+      }
+
+      .cls-2 {
+        fill: #eee6ce;
+      }
+
+      .cls-3 {
+        fill: #d2e019;
+        stroke-width: 8px;
+      }
+
+      .cls-4 {
+        fill: #313552;
+      }
+    </style>
+    <script>
+      <!-- define the variables first (the elements you want the user to interact with) -->
+      let theLetter = document.querySelector("#letter");
+
+      function logMyId() { console.log("clicked on an element:", this.id); }
+
+      <!-- define the user events that drive interactivity (click, hover, whatever)-->
+      theLetter.addEventListener("click", logMyId);
+    </script>
+  </defs>
+  <path id="paper" class="cls-1" d="M512.13,511.55H85.91V24.4H512.13Z"/>
+  <path id="back" class="cls-2" d="M540.93,525.3l-15.38.05,3,1.52L300,526.11l-228.51.76,3-1.52-15.38-.05V279.69L289.31,404.07,300,409.56l10.69-5.49L540.93,279.69Z"/>
+  <path id="front" class="cls-2" d="M300,375.8l109.43,75.56L523.13,526,300,525,76.87,526l113.7-74.61Z"/>
+  <path id="letterBotton" class="cls-3" d="M327.63,390.48A27.63,27.63,0,1,1,300,362.85,27.63,27.63,0,0,1,327.63,390.48Z"/>
+  <path id="text" class="cls-4" d="M454.47,76.3H145.53a6.15,6.15,0,0,1-6.13-6.13V67.49a6.15,6.15,0,0,1,6.13-6.13H454.47a6.15,6.15,0,0,1,6.13,6.13v2.68A6.15,6.15,0,0,1,454.47,76.3Zm6.13,28.6v-2.69a6.15,6.15,0,0,0-6.13-6.13H145.53a6.15,6.15,0,0,0-6.13,6.13v2.69a6.14,6.14,0,0,0,6.13,6.12H454.47A6.14,6.14,0,0,0,460.6,104.9Zm0,34.72v-2.69a6.14,6.14,0,0,0-6.13-6.12H145.55a6.13,6.13,0,0,0-6.12,6.12v2.69a6.14,6.14,0,0,0,6.12,6.13H454.49A6.15,6.15,0,0,0,460.62,139.62Zm0,34.72v-2.68a6.15,6.15,0,0,0-6.13-6.13H145.51a6.15,6.15,0,0,0-6.13,6.13v2.68a6.15,6.15,0,0,0,6.13,6.13H454.45A6.15,6.15,0,0,0,460.58,174.34Zm0,34.73v-2.69a6.15,6.15,0,0,0-6.13-6.13H145.55a6.14,6.14,0,0,0-6.12,6.13v2.69a6.13,6.13,0,0,0,6.12,6.12H454.49A6.14,6.14,0,0,0,460.62,209.07Zm0,34.72V241.1a6.14,6.14,0,0,0-6.13-6.12H145.55a6.13,6.13,0,0,0-6.12,6.12v2.69a6.14,6.14,0,0,0,6.12,6.13H454.49A6.15,6.15,0,0,0,460.62,243.79Z"/>
+</svg>

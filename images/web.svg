@@ -1,0 +1,43 @@
+<svg id="web" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #eee6ce;
+        stroke-width: 13px;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        stroke: #313552;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #313552;
+      }
+
+      .cls-3 {
+        fill: #b8405e;
+        stroke-width: 7px;
+      }
+
+      .cls-4 {
+        fill: #2eb086;
+        stroke-width: 8px;
+      }
+    </style>
+    <script>
+      <!-- define the variables first (the elements you want the user to interact with) -->
+      let theWeb = document.querySelector("#web");
+
+      function logMyId() { console.log("clicked on an element:", this.id); }
+
+      <!-- define the user events that drive interactivity (click, hover, whatever)-->
+      theWeb.addEventListener("click", logMyId);
+    </script>
+  </defs>
+  <path id="webBack" class="cls-1" d="M564.26,503.77H35.74v-404H564.26Z"/>
+  <path id="webTop" class="cls-2" d="M564.26,189.85H35.74V99.73H564.26Z"/>
+  <path id="webPink" class="cls-3" d="M284.83,465.6H71.89V217.43H284.83Z"/>
+  <path id="webGreen" class="cls-4" d="M520.74,318H333.85V217.43H520.74Z"/>
+  <path id="webText" class="cls-2" d="M511.55,351.36H343a9.22,9.22,0,0,1-9.19-9.19h0A9.22,9.22,0,0,1,343,333H511.55a9.21,9.21,0,0,1,9.19,9.19h0A9.21,9.21,0,0,1,511.55,351.36Zm9.19,18.9h0a9.22,9.22,0,0,0-9.19-9.2H343a9.22,9.22,0,0,0-9.19,9.2h0a9.22,9.22,0,0,0,9.19,9.19H511.55A9.22,9.22,0,0,0,520.74,370.26Zm0,28.08h0a9.22,9.22,0,0,0-9.19-9.19H343a9.22,9.22,0,0,0-9.19,9.19h0a9.22,9.22,0,0,0,9.19,9.19H511.55A9.21,9.21,0,0,0,520.74,398.34Zm0,28.09h0a9.22,9.22,0,0,0-9.19-9.2H343a9.22,9.22,0,0,0-9.19,9.2h0a9.22,9.22,0,0,0,9.19,9.19H511.55A9.22,9.22,0,0,0,520.74,426.43Zm0,28.08h0a9.22,9.22,0,0,0-9.19-9.19H343a9.22,9.22,0,0,0-9.19,9.19h0A9.22,9.22,0,0,0,343,463.7H511.55A9.21,9.21,0,0,0,520.74,454.51Z"/>
+</svg>

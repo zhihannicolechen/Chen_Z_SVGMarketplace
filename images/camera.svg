@@ -1,0 +1,47 @@
+<svg id="camera" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      #camera:hover #camOutside {
+      filter: invert(68%);
+      }
+      .cls-1 {
+        fill: #eee6ce;
+        stroke: #313552;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+
+      .cls-2 {
+        fill: #313552;
+        transition: all ease 0.5s;
+      }
+
+      .cls-3 {
+        fill: #b8405e;
+      }
+    </style>
+    <script>
+      <!-- define the variables first (the elements you want the user to interact with) -->
+      let theCamera = document.querySelector("#camera");
+
+      function logMyId() { console.log("clicked on an element:", this.id); }
+
+      <!-- define the user events that drive interactivity (click, hover, whatever)-->
+      theCamera.addEventListener("click", logMyId);
+    </script>
+
+  </defs>
+  <path id="camBack" class="cls-1" d="M543,491H44a20.06,20.06,0,0,1-20-20V155a20.06,20.06,0,0,1,20-20H543a20.06,20.06,0,0,1,20,20V471A20.06,20.06,0,0,1,543,491Z"/>
+  <path id="camButtom" class="cls-2" d="M543,491H44a20.06,20.06,0,0,1-20-20V434H563v37A20.06,20.06,0,0,1,543,491Z"/>
+  <path id="camFront" class="cls-2" d="M535,186H444V165h91Z"/>
+  <path id="camButton" class="cls-2" d="M126,125.9H74.1a5.59,5.59,0,0,1-5.6-5.6v-9.9a5.59,5.59,0,0,1,5.6-5.6H126a5.59,5.59,0,0,1,5.6,5.6v9.9A5.59,5.59,0,0,1,126,125.9Z"/>
+  <path id="camTop" class="cls-2" d="M433.4,125H202.6l4.1-26.6H428.8Z"/>
+  <g id="camOutside">
+    <path class="cls-3" d="M288,175.5c-83.9,0-151.8,65-151.8,145.2s68,145.2,151.8,145.2,151.8-65,151.8-145.2S371.9,175.5,288,175.5Zm0,243.8c-57,0-103.2-44.2-103.2-98.6S231,222.1,288,222.1s103.2,44.2,103.2,98.6S345,419.3,288,419.3Z"/>
+    <g>
+      <path class="cls-2" d="M288,175.9c-103.5-.3-179.7,102.6-135.2,199.3,23.8,51.1,79.2,84,135.2,83.4,100.8.5,177.1-97.2,137.5-193.6-22-54.3-79.3-89.5-137.5-89.1Zm0-.8c58.7-.6,116.7,34.5,140.3,88.7C471.9,363,393.2,467.1,288,466.6c-105.1.5-183.8-103.6-140.3-202.8,23.7-54.2,81.6-89.3,140.3-88.7Z"/>
+      <path class="cls-2" d="M288,419.7c-33.4.3-66.5-15.6-86.7-42.3C149.3,307,203,215,288,214.8c84.9.2,138.7,92.3,86.7,162.6-20.1,26.7-53.3,42.6-86.7,42.3Zm0-.8c39.6.3,78.6-23.4,94.5-60,29.1-66.8-23.9-136.6-94.5-136.1-70.7-.5-123.6,69.4-94.5,136.1,15.9,36.6,54.9,60.3,94.5,60Z"/>
+    </g>
+  </g>
+  <path id="camInside" class="cls-2" d="M377.2,320.7A89.2,89.2,0,1,1,288,231.5,89.15,89.15,0,0,1,377.2,320.7Z"/>
+</svg>

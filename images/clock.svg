@@ -1,0 +1,37 @@
+<svg id="clock" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      #clock:hover #clockInside {
+      transform: rotate(180deg);
+      }
+
+      .cls-1 {
+        fill: #b8405e;
+        stroke: #eee6ce;
+        stroke-miterlimit: 10;
+        stroke-width: 12px;
+      }
+
+      .cls-2 {
+        fill: #2eb086;
+        transition: all ease 0.5s;
+      }
+
+      .cls-3 {
+        fill: #313552;
+      }
+    </style>
+    <script>
+      <!-- define the variables first (the elements you want the user to interact with) -->
+      let theClock = document.querySelector("#clock");
+
+      function logMyId() { console.log("clicked on an element:", this.id); }
+
+      <!-- define the user events that drive interactivity (click, hover, whatever)-->
+      theClock.addEventListener("click", logMyId);
+    </script>
+  </defs>
+  <path id="clockCricle" class="cls-1" d="M293,74.5c-127,0-230,103-230,230s103,230,230,230,230-103,230-230S420,74.5,293,74.5Zm0,406.7A176.79,176.79,0,0,1,116.2,304.4c0-97.7,79.2-176.7,176.8-176.7A176.79,176.79,0,0,1,469.8,304.5C469.8,402.2,390.6,481.2,293,481.2Z"/>
+  <path id="clockInside" class="cls-2" d="M355.5,250.9l-59,59a11.92,11.92,0,0,1-4.8,2.9c-.1,0-.1,0-.2.1-.3.1-.5.1-.8.2-.1,0-.3.1-.4.1s-.5.1-.7.1-.3.1-.5.1h-1.2a4.87,4.87,0,0,1-1.2-.1h0a12.12,12.12,0,0,1-7.2-3.4h0a11.57,11.57,0,0,1-3.4-7.2h0c0-.4-.1-.8-.1-1.2h0v-116a12,12,0,0,1,24,0v87L338.5,234a12,12,0,0,1,17,0h0A11.89,11.89,0,0,1,355.5,250.9Z"/>
+  <path id="clockTop" class="cls-3" d="M88.8,152.2A68.21,68.21,0,0,1,197.2,80.6,238.07,238.07,0,0,0,93.1,163.5,69.43,69.43,0,0,1,88.8,152.2ZM413.6,91.8a237.8,237.8,0,0,1,91.9,96.3,68.21,68.21,0,0,0-81-101.6A64.71,64.71,0,0,0,413.6,91.8Z"/>
+</svg>
