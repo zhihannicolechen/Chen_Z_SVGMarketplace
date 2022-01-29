@@ -1,9 +1,32 @@
 <svg id="map" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
   <defs>
     <style>
+      #map:hover #location {
+      transform: scale(1.1);
+      fill: #EFE918;
+      filter: drop-shadow(5px 5px 10px #000);
+      }
+
+      #map:hover #mapBack {
+      transform: scale(0.9);
+      opacity: 0.7;
+      }
+
+      #map:hover #mapGreen {
+      transform: scale(0.9);
+      opacity: 0.7;
+      }
+
+      #map:hover #mapYellow {
+      transform: scale(0.9);
+      opacity: 0.7;
+      }
+
       .cls-1 {
         fill: #eee6ce;
         stroke-width: 13px;
+        transition: transform 1s;
+        transition: all ease 1s;
       }
 
       .cls-1, .cls-2, .cls-3, .cls-4 {
@@ -13,6 +36,8 @@
 
       .cls-2 {
         fill: #2eb086;
+        transition: transform 1s;
+        transition: all ease 1s;
       }
 
       .cls-2, .cls-3 {
@@ -21,11 +46,15 @@
 
       .cls-3 {
         fill: #d2e019;
+        transition: transform 1s;
+        transition: all ease 1s;
       }
 
       .cls-4 {
         fill: #b8405e;
         stroke-width: 7px;
+        transition: transform 1s;
+        transition: all ease 1s;
       }
     </style>
     <script>

@@ -1,9 +1,21 @@
 <svg id="star" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
   <defs>
     <style>
+      #star:hover #starBG {
+      fill: #d2e019;
+      opacity: 0;
+      }
+
+      #star:hover #yellowStar {
+      fill: #b8405e;
+      transform: rotate(180deg);
+      filter: drop-shadow(5px 5px 10px #000);
+      }
+
       .cls-1 {
         fill: #b8405e;
         stroke-width: 7px;
+        transition: all ease 1s;
       }
 
       .cls-1, .cls-2 {
@@ -14,6 +26,8 @@
       .cls-2 {
         fill: #d2e019;
         stroke-width: 8px;
+        transform-origin: center;
+        transition: all ease 1s;
       }
     </style>
     <script>

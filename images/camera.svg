@@ -1,25 +1,56 @@
 <svg id="camera" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
   <defs>
     <style>
-      #camera:hover #camOutside {
-      filter: invert(68%);
+      #camera:hover #camTop {
+      opacity: 0.4;
       }
+
+      #camera:hover #camBack {
+      opacity: 0.4;
+      }
+
+      #camera:hover #camButton {
+      opacity: 0.4;
+      }
+
+      #camera:hover #camBottom {
+      opacity: 0.4;
+      }
+
+      #camera:hover #camFront {
+      opacity: 0.4;
+      }
+
+      #camera:hover #camOutside {
+      filter: invert(100%);
+      }
+
+      #camera:hover #camInside {
+      filter: invert(100%);
+      }
+
       .cls-1 {
         fill: #eee6ce;
         stroke: #313552;
         stroke-miterlimit: 10;
         stroke-width: 12px;
+        transition: transform 1s;
+        transition: all ease 1s;
       }
 
       .cls-2 {
         fill: #313552;
-        transition: all ease 0.5s;
+        transition: transform 1s;
+        transition: all ease 1s;
       }
 
       .cls-3 {
         fill: #b8405e;
+        transition: transform 1s;
+        transition: all ease 1s;
       }
     </style>
+
     <script>
       <!-- define the variables first (the elements you want the user to interact with) -->
       let theCamera = document.querySelector("#camera");
@@ -32,7 +63,7 @@
 
   </defs>
   <path id="camBack" class="cls-1" d="M543,491H44a20.06,20.06,0,0,1-20-20V155a20.06,20.06,0,0,1,20-20H543a20.06,20.06,0,0,1,20,20V471A20.06,20.06,0,0,1,543,491Z"/>
-  <path id="camButtom" class="cls-2" d="M543,491H44a20.06,20.06,0,0,1-20-20V434H563v37A20.06,20.06,0,0,1,543,491Z"/>
+  <path id="camBottom" class="cls-2" d="M543,491H44a20.06,20.06,0,0,1-20-20V434H563v37A20.06,20.06,0,0,1,543,491Z"/>
   <path id="camFront" class="cls-2" d="M535,186H444V165h91Z"/>
   <path id="camButton" class="cls-2" d="M126,125.9H74.1a5.59,5.59,0,0,1-5.6-5.6v-9.9a5.59,5.59,0,0,1,5.6-5.6H126a5.59,5.59,0,0,1,5.6,5.6v9.9A5.59,5.59,0,0,1,126,125.9Z"/>
   <path id="camTop" class="cls-2" d="M433.4,125H202.6l4.1-26.6H428.8Z"/>

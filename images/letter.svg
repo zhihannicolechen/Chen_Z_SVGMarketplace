@@ -1,8 +1,33 @@
 <svg id="letter" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
   <defs>
     <style>
+      #letter:hover #back {
+      opacity: 0;
+
+      }
+
+      #letter:hover #front {
+      opacity: 0;
+      }
+
+      #letter:hover #letterBotton {
+      opacity: 0;
+      }
+
+      #letter:hover #paper {
+      fill: #EEE6CE;
+      transform: scale(0.8);
+      filter: drop-shadow(5px 5px 10px #000);
+      }
+
+      #letter:hover #text {
+      transform: scale(0.8);
+      }
+
       .cls-1 {
         fill: #b8405e;
+        transition: transform 1s;
+        transition: all ease 1s;
       }
 
       .cls-1, .cls-2, .cls-3 {
@@ -16,15 +41,19 @@
 
       .cls-2 {
         fill: #eee6ce;
+        transition: all ease 1s;
       }
 
       .cls-3 {
         fill: #d2e019;
         stroke-width: 8px;
+        transition: all ease 1s;
       }
 
       .cls-4 {
         fill: #313552;
+        transition: tranform 1s;
+        transition: all ease 1s;
       }
     </style>
     <script>

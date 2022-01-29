@@ -1,9 +1,19 @@
 <svg id="question" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
   <defs>
     <style>
+      #question:hover #bubble {
+      opacity: 0;
+      }
+
+      #question:hover #questionMark {
+      fill: #EFE918;
+      filter: drop-shadow(5px 5px 10px #000);
+      }
+
       .cls-1 {
         fill: #eee6ce;
-        stroke-width: 16px;
+        stroke-width: 20px;
+        transition: all ease 1s;
       }
 
       .cls-1, .cls-2 {
@@ -14,6 +24,7 @@
       .cls-2 {
         fill: #b8405e;
         stroke-width: 7px;
+        transition: all ease 1s;
       }
     </style>
     <script>
