@@ -5,6 +5,10 @@
         filter: drop-shadow(5px 5px 10px #000);
       }
 
+      #paper:hover #magnifier {
+        opacity: 0;
+      }
+
       .cls-1 {
         fill: #eee6ce;
         stroke: #313552;
@@ -20,6 +24,7 @@
 
       .cls-3 {
         fill: #313552;
+        transition: opacity ease 0.5s;
       }
     </style>
 
