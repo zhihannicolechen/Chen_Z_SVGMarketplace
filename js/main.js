@@ -1,18 +1,19 @@
 // this is a self-invoking anonymous function
+// it is also called a module (my variation of the module pattern)
 // it's called the module pattern
 
 (() => {
-  // this is a js comment
-  console.log('this is some text');
-  // go into the document and make a reference to an element that you want to work with
-  let theHeader = document.querySelector('#main-header');
+  // make associations (select) with elements in the HTML markup using
+  let theHeading = document.querySelector('.main-heading'),
+      theIcons = document.querySelectorAll(".icon");
 
-  // create a function that runs when theHeader element is clicked
+  // script your behaviour with functions
   function logElement() {
-    console.log('clicked on an element!');
+    console.log('clicked on an element: ', this.id);
   }
 
-  //listen for a usr event, and then do something
-  //the "do something" is the function we run when the element is clicked
-  theHeader.addEventListener('click', logElement);
+  //add event handling here (user "triggers")
+  //assign the event you want to listen for, and the function that
+  theHeading.addEventListener('click', logElement);
+
 })();

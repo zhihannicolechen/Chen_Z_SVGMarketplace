@@ -1,3 +1,10 @@
+* {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-size: 16px;
 }
@@ -6,27 +13,38 @@ body {
   display: none;
 }
 
+.main-header {
+  background-color: #EEE6CE;
+}
+
 .main-heading {
-  color: red;
+  color: #313552;
   cursor: pointer;
   text-align: center;
-
-  font-family: 'Lobster', cursive;
+  font-family: 'Nanum Myeongjo', serif;
   font-size: 3em;
+  padding: 2em;
 }
 
 /* set up the grid */
 #svg-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
 .container {
   display: flex;
+  flex-direction: column;
 }
 
-.container img {
+
+.container object {
   width: 100%;
+}
+
+.container p {
+  text-align: center;
+  padding-top: 10px;
 }
