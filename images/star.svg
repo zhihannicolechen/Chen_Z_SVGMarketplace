@@ -1,0 +1,31 @@
+<svg id="star" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b8405e;
+        stroke-width: 7px;
+      }
+
+      .cls-1, .cls-2 {
+        stroke: #313552;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #d2e019;
+        stroke-width: 8px;
+      }
+    </style>
+    <script>
+      <!-- define the variables first (the elements you want the user to interact with) -->
+      let theStar = document.querySelector("#star");
+
+      function logMyId() { console.log("clicked on an element:", this.id); }
+
+      <!-- define the user events that drive interactivity (click, hover, whatever)-->
+      theStar.addEventListener("click", logMyId);
+    </script>
+  </defs>
+  <path id="starBG" class="cls-1" d="M579.47,300C579.47,451,457,573.45,306,573.45S32.57,451,32.57,300,155,26.55,306,26.55,579.47,149,579.47,300Z"/>
+  <path id="yellowStar" class="cls-2" d="M306,103.55l61.61,124.84,137.77,20-99.69,97.17,23.53,137.21L306,418,182.8,482.79l23.53-137.21-99.68-97.17,137.76-20Z"/>
+</svg>

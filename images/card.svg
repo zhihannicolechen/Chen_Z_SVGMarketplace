@@ -1,0 +1,75 @@
+<svg id="card" xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <style>
+      #card:hover #cardBack {
+      opacity: .5;
+      }
+      #card:hover #line {
+      opacity: .5;
+      }
+      #card:hover #cricle1 {
+      opacity: .5;
+      }
+      #card:hover #cricle2 {
+      opacity: .5;
+      }
+      #card:hover #cardLock {
+      filter: drop-shadow(5px 5px 10px #000);
+      }
+
+
+      .cls-1 {
+        fill: #eee6ce;
+        stroke-width: 10px;
+        transition: opacity ease 1s;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+        stroke: #313552;
+        stroke-miterlimit: 10;
+        transition: opacity ease 1s;
+      }
+
+      .cls-2 {
+        fill: #b8405e;
+        stroke-width: 8px;
+        transition: opacity ease 1s;
+      }
+
+      .cls-3 {
+        fill: #2eb086;
+        transition: opacity ease 1s;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-width: 6px;
+        transition: opacity ease 1s;
+      }
+
+      .cls-4 {
+        fill: #c5ce17;
+        transition: opacity ease 1s;
+      }
+
+      .cls-5 {
+        fill: #efe918;
+        stroke-width: 7px;
+        transition: all ease 1s;
+      }
+    </style>
+    <script>
+      <!-- define the variables first (the elements you want the user to interact with) -->
+      let theCard = document.querySelector("#card");
+
+      function logMyId() { console.log("clicked on an element:", this.id); }
+
+      <!-- define the user events that drive interactivity (click, hover, whatever)-->
+      theCard.addEventListener("click", logMyId);
+    </script>
+  </defs>
+  <path id="cardBack" class="cls-1" d="M456,408.9H58a12,12,0,0,1-12-12v-256a12,12,0,0,1,12-12H456a12,12,0,0,1,12,12v256A12,12,0,0,1,456,408.9Z"/>
+  <path id="line" class="cls-2" d="M468,228.7H46v-53H468Z"/>
+  <path id="cricle2" class="cls-3" d="M115.6,363.8a21.3,21.3,0,1,1-21.3-21.3A21.25,21.25,0,0,1,115.6,363.8Z"/>
+  <path id="cricle1" class="cls-4" d="M145.6,364.8a21.3,21.3,0,1,1-21.3-21.3A21.25,21.25,0,0,1,145.6,364.8Z"/>
+  <path id="cardLock" class="cls-5" d="M393.6,306.7a68.26,68.26,0,1,1,128.8-22.3,91.85,91.85,0,0,0-13-8.2,54.8,54.8,0,1,0-106.5,18.5A93.38,93.38,0,0,0,393.6,306.7Zm167.9,65.2A89.5,89.5,0,1,1,472,282.4,89.54,89.54,0,0,1,561.5,371.9Zm-67.9,26.6L485,370.3a20.73,20.73,0,1,0-17.9,5.4l8.6,28.2a7.21,7.21,0,0,0,9,4.8l4.1-1.2A7.21,7.21,0,0,0,493.6,398.5Z"/>
+</svg>
